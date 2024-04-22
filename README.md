@@ -54,5 +54,8 @@ model.compile(optimizer='adam',
 # Train the model
 model.fit(train_generator, epochs=10)
 
+# Save the model
+model.save('path/to/save/model')
+
 # Evaluate the model on the test data
 model.evaluate(test_generator)
